@@ -18,223 +18,233 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 const Projects = () => {
   const projectsData = [
     {
-      "id": 1,
-      "title": "Realtime Riddle Board",
-      "category": "fullstack",
-      "description": "Build Fast. Sync Live. Auth & Comments in Minutes using cursor and supabase.",
-      "previewType": "slide",
+      id: 1,
+      title: "Realtime Riddle Board",
+      category: "fullstack",
+      description:
+        "Build Fast. Sync Live. Auth & Comments in Minutes using cursor and supabase.",
+      previewType: "slide",
       image: "/images/rrb.png",
-      "slideUrl": "https://pitch.com/v/realtime-riddle-board-4qhdnk",
-      "repo": "https://github.com/gagand29/realtime-riddle-board",
-      "keywords": ["cursor", "supabase", "live", "auth", "comments"]
+      slideUrl: "https://pitch.com/v/realtime-riddle-board-4qhdnk",
+      repo: "https://github.com/gagand29/realtime-riddle-board",
+      keywords: ["cursor", "supabase", "live", "auth", "comments"],
     },
     {
-      "id": 2,
-      "title": "Movie Database App",
-      "category": "fullstack",
-      "description": "Secure movie app with Next.js, AWS RDS & S3, JWT Auth, Swagger, CI/CD.",
-      "previewType": "slide",
+      id: 2,
+      title: "Movie Database App",
+      category: "fullstack",
+      description:
+        "Secure movie app with Next.js, AWS RDS & S3, JWT Auth, Swagger, CI/CD.",
+      previewType: "slide",
       image: "/images/md.png",
-      "slideUrl": "https://pitch.com/v/copy-of-movie-database-app-7uqwts",
-      "keywords": [
-      "Next.js",
-      "AWS RDS",
-      "AWS S3",
-      "JWT Auth",
-      "CI/CD",
-      "Swagger Docs",
-      "Full Stack App"
-    ],
-    "repo": "https://github.com/gagand29/movie-database-app"
+      slideUrl: "https://pitch.com/v/copy-of-movie-database-app-7uqwts",
+      keywords: [
+        "Next.js",
+        "AWS RDS",
+        "AWS S3",
+        "JWT Auth",
+        "CI/CD",
+        "Swagger Docs",
+        "Full Stack App",
+      ],
+      repo: "https://github.com/gagand29/movie-database-app",
     },
     {
-      "id": 3,
-      "title": "Indian Recipe Hub",
-      "category": "fullstack",
-      "description": "Full-stack recipe platform using React.js & Django REST, deployed on AWS S3, EC2, and CloudFront.",
-      "previewType": "slide",
+      id: 3,
+      title: "Indian Recipe Hub",
+      category: "fullstack",
+      description:
+        "Full-stack recipe platform using React.js & Django REST, deployed on AWS S3, EC2, and CloudFront.",
+      previewType: "slide",
       image: "/images/irh.png",
-      "slideUrl": "https://pitch.com/v/aws---irh-project-gqc9sj",
-      "keywords": [
+      slideUrl: "https://pitch.com/v/aws---irh-project-gqc9sj",
+      keywords: [
         "React.js",
         "Django REST",
         "AWS EC2",
         "AWS S3",
         "CloudFront",
         "Full Stack App",
-        "Scalable Deployment"
+        "Scalable Deployment",
       ],
-      "repo": "https://github.com/gagand29/IRH-Indian-Recipe-Hub"
+      repo: "https://github.com/gagand29/IRH-Indian-Recipe-Hub",
     },
     {
-      "id": 4,
-      "title": "OurMainApp",
-      "category": "fullstack",
-      "description": "Social media web app built with Laravel, featuring auth, user profiles, and live search.",
-      "previewType": "repo",
+      id: 4,
+      title: "OurMainApp",
+      category: "fullstack",
+      description:
+        "Social media web app built with Laravel, featuring auth, user profiles, and live search.",
+      previewType: "repo",
       image: "/images/op.png",
-      "slideUrl": "https://github.com/gagand29/ourmainapp",
-      "keywords": [
+      slideUrl: "https://github.com/gagand29/ourmainapp",
+      keywords: [
         "Laravel",
         "PHP",
         "MySQL",
         "Authentication",
         "Social Media",
         "Blade Template",
-        "Web Development"
+        "Web Development",
       ],
-      "repo": "https://github.com/gagand29/ourmainapp"
+      repo: "https://github.com/gagand29/ourmainapp",
     },
     {
-      "id": 5,
-      "title": "Grade Submission System",
-      "category": "fullstack",
-      "description": "Spring Boot + React app with REST API, form validation, and secure grade submissions.",
-      "previewType": "repo",
+      id: 5,
+      title: "Grade Submission System",
+      category: "fullstack",
+      description:
+        "Spring Boot + React app with REST API, form validation, and secure grade submissions.",
+      previewType: "repo",
       image: "/images/Gss.png",
-      "slideUrl": "https://github.com/gagand29/grade-submission",
-      "keywords": [
+      slideUrl: "https://github.com/gagand29/grade-submission",
+      keywords: [
         "Spring Boot",
         "React.js",
         "REST API",
         "Form Validation",
         "MVC Architecture",
         "Backend Security",
-        "Dependency Injection"
+        "Dependency Injection",
       ],
-      "repo": "https://github.com/gagand29/grade-submission"
+      repo: "https://github.com/gagand29/grade-submission",
     },
     {
-      "id": 6,
-      "title": "Receipt Processor",
-      "category": "backend",
-      "description": "Backend service using Node.js & Express to process receipts, calculate points, and return unique IDs. Dockerized for easy deployment.",
-      "previewType": "slide",
+      id: 6,
+      title: "Receipt Processor",
+      category: "backend",
+      description:
+        "Backend service using Node.js & Express to process receipts, calculate points, and return unique IDs. Dockerized for easy deployment.",
+      previewType: "slide",
       image: "/images/rp.png",
-      "slideUrl": "https://pitch.com/v/receipt-processor--gagan-doddanna---fetch-iakzji",
-      "keywords": [
+      slideUrl:
+        "https://pitch.com/v/receipt-processor--gagan-doddanna---fetch-iakzji",
+      keywords: [
         "Node.js",
         "Express.js",
         "REST API",
         "Docker",
         "Backend Development",
         "In-Memory Storage",
-        "Receipt Scoring"
+        "Receipt Scoring",
       ],
-      "repo": "https://github.com/gagand29/Receipt-processor"
+      repo: "https://github.com/gagand29/Receipt-processor",
     },
     {
-      "id": 7,
-      "title": "Full-Stack Research Portal",
-      "category": "others",
-      "description": "Conceptual platform for secure scientific collaboration with AI-powered search, role-based access, and notebook sharing.",
-      "previewType": "slide",
+      id: 7,
+      title: "Full-Stack Research Portal",
+      category: "others",
+      description:
+        "Conceptual platform for secure scientific collaboration with AI-powered search, role-based access, and notebook sharing.",
+      previewType: "slide",
       image: "/images/rsp.png",
-      "slideUrl": "https://pitch.com/v/gagan-doddanna-hfyq2s",
-      "keywords": [
-      "Research Collaboration",
-      "AI Model Sharing",
-      "Jupyter Notebooks",
-      "Role-Based Access",
-      "Secure Data Management",
-      "Scientific Platform Design",
-      "UX Architecture Proposal"
-    ]
+      slideUrl: "https://pitch.com/v/gagan-doddanna-hfyq2s",
+      keywords: [
+        "Research Collaboration",
+        "AI Model Sharing",
+        "Jupyter Notebooks",
+        "Role-Based Access",
+        "Secure Data Management",
+        "Scientific Platform Design",
+        "UX Architecture Proposal",
+      ],
     },
     {
-      "id": 8,
-      "title": "Superstore Analysis",
-      "category": "dataviz",
-      "description": "Created impactful Superstore visualizations with RStudio and Tableau to support data-driven decisions.",
-      "previewType": "slide",
+      id: 8,
+      title: "Superstore Analysis",
+      category: "dataviz",
+      description:
+        "Created impactful Superstore visualizations with RStudio and Tableau to support data-driven decisions.",
+      previewType: "slide",
       image: "/images/dv.png",
-      "slideUrl": "https://pitch.com/v/superstore-analysis-rsec57",
-      "keywords": [
+      slideUrl: "https://pitch.com/v/superstore-analysis-rsec57",
+      keywords: [
         "Data Visualization",
         "RStudio",
         "Tableau",
         "Superstore",
         "Impactful Insights",
         "Data-Driven Decisions",
-        "Collaborative Analytics"
+        "Collaborative Analytics",
       ],
-      "repo": ""
+      repo: "",
     },
     {
-      "id": 9,
-      "title": "Shippy – UX/UI Case Study",
-      "category": "uiux",
-      "description": "Revolutionized delivery experience through secure UX, smart notifications, and cross-device UI flows.",
-      "previewType": "external",
+      id: 9,
+      title: "Shippy – UX/UI Case Study",
+      category: "uiux",
+      description:
+        "Revolutionized delivery experience through secure UX, smart notifications, and cross-device UI flows.",
+      previewType: "external",
       image: "/images/shippy.png",
-      "externalUrl": "https://www.behance.net/gagand1",
-      "keywords": [
+      externalUrl: "https://www.behance.net/gagand1",
+      keywords: [
         "UX Strategy",
         "Persona Development",
         "Wireframing",
         "Prototype",
         "Cross-Device Design",
         "Smart Notifications",
-        "Seamless UX"
-      ]
+        "Seamless UX",
+      ],
     },
     {
-      "id": 10,
-      "title": "Revamp Chicago Library Site",
-      "category": "uiux",
-      "description": "Transformed CPL's online experience with user research, personas, and intuitive navigation.",
-      "previewType": "external",
+      id: 10,
+      title: "Revamp Chicago Library Site",
+      category: "uiux",
+      description:
+        "Transformed CPL's online experience with user research, personas, and intuitive navigation.",
+      previewType: "external",
       image: "/images/cpl.png",
-      "externalUrl": "https://www.behance.net/gagand1",
-      "keywords": [
+      externalUrl: "https://www.behance.net/gagand1",
+      keywords: [
         "Informed User Research",
         "Design Thinking",
         "Persona-Driven Design",
         "Wireframing",
         "Intuitive UI",
         "UX Redesign",
-        "Library Interface"
-      ]
+        "Library Interface",
+      ],
     },
     {
-      "id": 11,
-      "title": "SneakerZ",
-      "category": "uiux",
-      "description": "Crafted a stylish sneaker discovery experience with pixel-perfect UI and seamless branding.",
-      "previewType": "external",
+      id: 11,
+      title: "SneakerZ",
+      category: "uiux",
+      description:
+        "Crafted a stylish sneaker discovery experience with pixel-perfect UI and seamless branding.",
+      previewType: "external",
       image: "/images/sn.png",
-      "externalUrl": "https://www.behance.net/gagand1",
-      "keywords": [
+      externalUrl: "https://www.behance.net/gagand1",
+      keywords: [
         "Empowered UX",
         "User-Centric Design",
         "Intuitive UI",
         "Optimized Journeys",
         "Maximized Satisfaction",
         "E-commerce UX",
-        "Visual Branding"
-      ]
+        "Visual Branding",
+      ],
     },
     {
-      "id": 12,
-      "title": "UX Genie – No-Code UX Research Tool",
-      "category": "uiux",
-      "description": "Proposed a scalable UX research assistant using Bubble.io, OpenAI API, and rapid prototyping.",
-      "previewType": "external",
+      id: 12,
+      title: "UX Genie – No-Code UX Research Tool",
+      category: "uiux",
+      description:
+        "Proposed a scalable UX research assistant using Bubble.io, OpenAI API, and rapid prototyping.",
+      previewType: "external",
       image: "/images/uxgenie.png",
-      "externalUrl": "https://www.behance.net/gagand1",
-      "keywords": [
+      externalUrl: "https://www.behance.net/gagand1",
+      keywords: [
         "Bubble.io",
         "No-Code Development",
         "OpenAI API",
         "Rapid Prototyping",
         "Responsive Design",
         "UX/UI Design",
-        "AI-Powered UX"
-      ]
-    }
-  
-    
-  
+        "AI-Powered UX",
+      ],
+    },
   ];
 
   const blogPosts = [
@@ -242,26 +252,30 @@ const Projects = () => {
       title: "Deployed new version of Portfolio",
       category: "deploy",
       date: "2024-06-01",
-      summary: "Successfully deployed the latest version of my portfolio with improved performance and accessibility features."
+      summary:
+        "Successfully deployed the latest version of my portfolio with improved performance and accessibility features.",
     },
     {
       title: "Feedback received on UX Case Study",
       category: "feedback",
       date: "2024-05-30",
-      summary: "Received valuable feedback on my recent UX case study focusing on e-commerce checkout experiences."
+      summary:
+        "Received valuable feedback on my recent UX case study focusing on e-commerce checkout experiences.",
     },
     {
       title: "First build level 1",
       category: "deploy",
       date: "2024-05-28",
-      summary: "Completed the initial build phase for the new project, incorporating all core functionality requirements."
-    }
+      summary:
+        "Completed the initial build phase for the new project, incorporating all core functionality requirements.",
+    },
   ];
 
   const [activeCategory, setActiveCategory] = useState("all");
-  const filteredProjects = activeCategory === "all"
-    ? projectsData
-    : projectsData.filter((project) => project.category === activeCategory);
+  const filteredProjects =
+    activeCategory === "all"
+      ? projectsData
+      : projectsData.filter((project) => project.category === activeCategory);
 
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
@@ -271,7 +285,8 @@ const Projects = () => {
           <div className="mb-10">
             <h1 className="text-3xl md:text-4xl font-bold">Projects</h1>
             <p className="text-lg text-muted-foreground mt-2">
-              A selection of my recent work, spanning fullstack, UI/UX, and more.
+              A selection of my recent work, spanning fullstack, UI/UX, and
+              more.
             </p>
           </div>
         </UXAnnotation>
@@ -359,7 +374,11 @@ const Projects = () => {
                   <div className="flex gap-2">
                     <Button variant="outline" size="sm" asChild>
                       <a
-                        href={project.previewType === "external" ? project.externalUrl : project.slideUrl}
+                        href={
+                          project.previewType === "external"
+                            ? project.externalUrl
+                            : project.slideUrl
+                        }
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center gap-1"

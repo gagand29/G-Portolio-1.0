@@ -4,6 +4,7 @@ import { Download } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import UXAnnotation from "@/components/UXAnnotation";
+import { useFormField } from "./use-form-field";
 
 const About = () => {
   const skills = [
@@ -32,9 +33,7 @@ const About = () => {
           <div className="md:col-span-2 space-y-8">
             <UXAnnotation explanation="A clear, modern About Me section with visual hierarchy, logical sections, and readable typography.">
               <section className="prose dark:prose-invert max-w-none">
-                <h2 className="text-lg font-semibold mb-2 mt-0">
-                  Education
-                </h2>
+                <h2 className="text-lg font-semibold mb-2 mt-0">Education</h2>
                 <p className="mb-2">
                   <span className="font-medium">
                     Master of Science in Computer Science (HCI)
@@ -55,7 +54,7 @@ const About = () => {
                   from VTU, India.
                 </p>
                 <h2 className="text-lg font-semibold mb-2 mt-6">
-                   Professional Summary
+                  Professional Summary
                 </h2>
                 <p className="mb-2">
                   I'm a full-stack software engineer passionate about building
@@ -231,9 +230,9 @@ const About = () => {
               <div className="sticky top-24 space-y-6">
                 <div className="space-y-4">
                   <img
-                    src="/gg.png"
+                    src="/G5.png"
                     alt="Profile picture of Gagan Doddanna"
-                    className="w-56 h-56 rounded-full object-cover mx-auto mb-6 shadow-xl border border-gray-200"
+                    className="rounded-full shadow-sm border border-gray-200"
                   />
                   <div>
                     <h3 className="text-sm text-muted-foreground">Location</h3>

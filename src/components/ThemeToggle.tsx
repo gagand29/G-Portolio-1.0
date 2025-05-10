@@ -17,7 +17,7 @@ export default function ThemeToggle() {
       | "dark"
       | null;
     const prefersDark = window.matchMedia(
-      "(prefers-color-scheme: dark)"
+      "(prefers-color-scheme: dark)",
     ).matches;
 
     if (savedTheme) {
@@ -51,37 +51,32 @@ export default function ThemeToggle() {
 
   return (
     <div className="flex items-center gap-3 relative">
-      <Toggle
-        pressed={uxMode}
-        onPressedChange={setUxMode}
-        aria-label="Toggle UX Research Mode"
-        className={
-          uxMode
-            ? "rounded-full border border-blue-600 bg-blue-50 ring-2 ring-blue-500 text-black font-medium"
-            : "rounded-full border hover:bg-muted"
-        }
-      >
-        <ToggleRight className="h-4 w-4" />
-        <span className="sr-only md:not-sr-only md:ml-2 md:text-xs">
-          UX Mode
-        </span>
-      </Toggle>
-      {/* Toast/Tooltip for UX Mode */}
-      {showUxToast && (
-        <div
+      <div className="relative">
+        <Toggle
+          pressed={uxMode}
+          onPressedChange={setUxMode}
+          aria-label="Toggle UX Research Mode"
           className={
-            "fixed z-[9999] transition-opacity duration-300 " +
-            (typeof window !== "undefined" && window.innerWidth < 768
-              ? "left-1/2 -translate-x-1/2 bottom-6"
-              : "md:absolute md:top-12 md:right-0")
+            uxMode
+              ? "rounded-full border border-blue-600 bg-blue-50 ring-2 ring-blue-500 text-black font-medium"
+              : "rounded-full border hover:bg-muted"
           }
         >
-          <div className="bg-muted text-foreground text-sm rounded-md shadow-lg px-4 py-2 max-w-xs w-full animate-fade-in-out border border-border">
-            I'm just exploring UX! Currently learning, building in public, and
-            experimenting with ideas. Open to feedback 💬
+          <ToggleRight className="h-4 w-4" />
+          <span className="sr-only md:not-sr-only md:ml-2 md:text-xs">
+            UX Mode
+          </span>
+        </Toggle>
+        {/* Toast/Tooltip for UX Mode */}
+        {showUxToast && (
+          <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 z-[9999] w-screen max-w-xs px-2">
+            <div className="bg-muted text-foreground text-sm rounded-md shadow-lg px-4 py-2 w-full animate-fade-in-out border border-border">
+              I'm just exploring UX! Currently learning, building in public, and
+              experimenting with ideas. Open to feedback 💬
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
       <Button
         variant="outline"
         size="icon"
