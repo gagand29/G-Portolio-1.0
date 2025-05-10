@@ -12,7 +12,7 @@ import {
 
 import { cn } from "@/lib/utils";
 import { Label } from "@/components/ui/label";
-import { useFormField } from "./use-form-field";
+import { useFormField } from "@/components/ui/use-form-field";
 import { Toaster as Sonner } from "sonner";
 import { toast } from "./sonner-utils";
 
@@ -25,7 +25,7 @@ type FormFieldContextValue<
   name: TName;
 };
 
-const FormFieldContext = React.createContext<FormFieldContextValue>(
+export const FormFieldContext = React.createContext<FormFieldContextValue>(
   {} as FormFieldContextValue
 );
 
@@ -46,7 +46,7 @@ type FormItemContextValue = {
   id: string;
 };
 
-const FormItemContext = React.createContext<FormItemContextValue>(
+export const FormItemContext = React.createContext<FormItemContextValue>(
   {} as FormItemContextValue
 );
 
