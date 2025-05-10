@@ -4,7 +4,6 @@ import { Download } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import UXAnnotation from "@/components/UXAnnotation";
-import { useFormField } from "./use-form-field";
 
 const About = () => {
   const skills = [
