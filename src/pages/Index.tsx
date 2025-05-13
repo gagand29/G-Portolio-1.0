@@ -183,8 +183,12 @@ const Index = () => {
             onBlur={handleAvatarBlur}
           >
             {/* Avatar Placeholder (no image) */}
-            <div className="w-20 h-20 md:w-48 md:h-48 rounded-full bg-gray-200 flex items-center justify-center text-3xl md:text-5xl font-bold text-gray-500 border-4 border-background shadow-lg cursor-pointer relative">
-              G
+            <div className="w-16 h-16 md:w-32 md:h-32 rounded-full bg-gray-200 flex items-center justify-center border-4 border-background shadow-lg cursor-pointer relative overflow-hidden">
+              <img
+                src="/pro.png"
+                alt="Profile picture"
+                className="w-full h-full object-cover rounded-full"
+              />
             </div>
             {/* Badge-style greeting below avatar, only on hover/focus/tap */}
             <div
