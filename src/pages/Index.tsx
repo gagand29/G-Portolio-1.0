@@ -58,7 +58,7 @@ const Index = () => {
                 href="https://www.credly.com/badges/16f1b4a6-ab2b-4a99-8c51-c09c1921abe3/public_url"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 bg-muted rounded-full mb-6 hover:bg-gray-200 transition-colors"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-muted rounded-full hover:bg-gray-200 transition-colors"
                 style={{ textDecoration: "none" }}
               >
                 <span className="mr-2 text-base align-middle">🏅</span>
@@ -71,22 +71,31 @@ const Index = () => {
                 explanation="A warm personal greeting with a hand emoji creates an inviting first impression and sets a friendly tone."
                 showIndicator={isUXMode}
               >
-                <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                <h1 className="text-4xl md:text-5xl font-bold mt-8">
                   Hello 👋, I'm Gagan Doddanna!
                 </h1>
-              </UXAnnotation>
-
-              <UXAnnotation
-                explanation="A concise professional summary that quickly communicates core skills and expertise to visitors."
-                showIndicator={isUXMode}
-              >
-                <p className="text-lg md:text-xl text-muted-foreground mb-8">
-                  a Software Engineer based in Chicago, IL. Passionate about
-                  building scalable web applications and crafting seamless user
-                  experiences. Experienced in full-stack development with
-                  React.js, Next.js, Node.js, and AWS.
-                  <br />
-                  <span className="font-medium">#OpenToWork</span>
+                <p className="mt-6 text-lg md:text-xl text-slate-600 max-w-2xl font-normal font-sans">
+                  I <strong>design</strong> with users in mind and{" "}
+                  <strong>ship</strong> with React, Next.js, Node, and AWS—
+                  bringing <strong>LLM ideas</strong> to life.
+                </p>
+                <p className="mt-4 text-sm text-blue-600 hover:underline">
+                  <Link to="/projects">Explore projects →</Link>
+                </p>
+                <p className="mt-4 mb-6 text-sm text-slate-500 flex flex-wrap gap-x-2">
+                  <span>#FullStackEngineer</span>
+                  <span>#React</span>
+                  <span>#NextJS</span>
+                  <span>#NodeJS</span>
+                  <span>#AWS</span>
+                  <span>#LLMs</span>
+                  <span>#UXDesign</span>
+                  <a
+                    href="#"
+                    className="text-blue-500 underline underline-offset-2 font-medium hover:text-blue-700 transition cursor-pointer"
+                  >
+                    #OpenToWork
+                  </a>
                 </p>
               </UXAnnotation>
 
