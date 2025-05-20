@@ -119,7 +119,7 @@ export default function Contact() {
                         </a>
                         <span>•</span>
                         <a
-                          href="https://github.com"
+                          href="https://github.com/gagand29"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-primary hover:underline"
