@@ -245,6 +245,25 @@ const Projects = () => {
         "AI-Powered UX",
       ],
     },
+    {
+      "id": 13,
+      "title": "Feedback App – Built with Microsoft Power Platform",
+      "category": "others",
+      "description": "Designed a feedback submission system using Power Apps, Dataverse, and Power Automate with future integration plans for Power BI and Power Pages.",
+      "previewType": "external",
+      "image": "/images/feedback.png",
+      "externalUrl": "https://pitch.com/v/feedback-app---built-with-microsoft-power-platform-975e27",
+      "keywords": [
+        "Power Apps",
+        "Dataverse",
+        "Power Automate",
+        "Low-Code Development",
+        "Microsoft 365",
+        "Workflow Automation",
+        "Feedback System",
+        "No-Code Dashboard"
+      ]
+    },
   ];
 
   const blogPosts = [
