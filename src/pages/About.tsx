@@ -235,7 +235,7 @@ const About = () => {
                   />
                   <div>
                     <h3 className="text-sm text-muted-foreground">Location</h3>
-                    <p>Chicago, IL</p>
+                    <p>Chicago, IL (Open to relocate)</p>
                   </div>
                   <div>
                     <h3 className="text-sm text-muted-foreground">

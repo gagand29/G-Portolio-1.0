@@ -150,7 +150,7 @@ const Index = () => {
                       </svg>
                     </a>
                     <a
-                      href="https://github.com"
+                      href="https://github.com/gagand29"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-2 rounded-full border border-border hover:bg-muted transition-colors"
